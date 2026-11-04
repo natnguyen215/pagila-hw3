@@ -8,3 +8,8 @@
  * But there is also a view in the database that contains the correct formatting,
  * and you can SELECT from that VIEW instead of constructing the entire query manually.
  */
+select title, actors
+from nicer_but_slower_film_list
+where category = 'Documentary'
+and rating = 'G'
+order by title;
